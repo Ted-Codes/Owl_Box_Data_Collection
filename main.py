@@ -35,12 +35,14 @@ def get_weather(lat, lon):
         80: "Rain showers",
     }
 
-    temperature_string = f"{temp}°C"
+    temperature_string = f"{temp}"
     weather_string = weather_map.get(code, "Unknown")
 
-    return weather_string, temperature_string
+    temperature_int = float(temperature_string) * (9/5) + 32
 
-sycamore_weather, sycamore_temp = get_weather(37.7022, -121.9358)
+    return weather_string, temperature_int
+
+sycamore_weather, sycamore_temp = get_weather(32.7356, -97.1071)
 
 #----------------------------------#
 #YOUTUBE PULL

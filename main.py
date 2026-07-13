@@ -51,7 +51,12 @@ YOUTUBE_URL = "https://www.youtube.com/watch?v=CtDX8msDCQs"
 # Get direct stream URL
 ydl_opts = {
     "quiet": True,
-    "format": "best"
+    "format": "best",
+    "extractor_args": {
+        "youtube": {
+            "player_client": ["android"]
+        }
+    }
 }
 
 with yt_dlp.YoutubeDL(ydl_opts) as ydl:

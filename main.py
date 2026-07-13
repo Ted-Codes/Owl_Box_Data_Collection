@@ -76,7 +76,7 @@ cap.release()
 
 # Create client
 client = genai.Client(
-    api_key="os.environ["API_KEY"]
+    api_key=os.environ["API_KEY"]
 )
 
 # Load image

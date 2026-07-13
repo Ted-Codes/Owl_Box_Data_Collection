@@ -3,8 +3,6 @@ import yt_dlp
 import os
 from google import genai
 from PIL import Image
-import gspread
-from google.oauth2.service_account import Credentials
 from datetime import datetime
 import requests
 

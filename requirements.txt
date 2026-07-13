@@ -1,0 +1,7 @@
+opencv-python-headless
+yt-dlp
+google-genai
+Pillow
+gspread
+google-auth
+requests
